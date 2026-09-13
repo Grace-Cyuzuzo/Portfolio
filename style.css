@@ -1,6 +1,5 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Work+Sans:wght@400;500&display=swap');
- 
+
 :root{
   --bg: #EDEAE1;
   --ink: #013220;
@@ -8,25 +7,25 @@
   --line: #C1C3AC;
   --accent: #013220;
 }
- 
+
 *{ box-sizing: border-box; margin: 0; padding: 0; }
- 
+
 html{ scroll-behavior: smooth; }
- 
+
 body{
   background: var(--bg);
   color: var(--ink);
   font-family: 'Work Sans', sans-serif;
   line-height: 1.6;
 }
- 
+
 h1, h2, h3{
   font-family: 'Space Grotesk', sans-serif;
   line-height: 1.15;
 }
- 
+
 a{ color: var(--accent); text-decoration: none; }
- 
+
 /* ---- NAV ---- */
 nav{
   display: flex;
@@ -44,7 +43,7 @@ nav{
 .nav-links a{ color: var(--ink-dim); font-size: 14px; transition: color 0.2s ease; }
 .nav-links a:hover{ color: var(--ink); }
 .nav-links a.active{ color: var(--accent); font-weight: 500; }
- 
+
 /* ---- HERO ---- */
 .hero{
   padding: 40px;
@@ -61,13 +60,17 @@ nav{
   font-weight: 500;
   border-bottom: 1px solid var(--accent);
   padding-bottom: 2px;
-  margin-bottom: 28px;
 }
 .hero-link:hover{ opacity: 0.7; }
+.hero-links-row{
+  display: flex;
+  gap: 24px;
+  margin-bottom: 28px;
+}
 .social-links{ display: flex; gap: 20px; }
 .social-links a{ font-size: 14px; color: var(--ink-dim); }
 .social-links a:hover{ color: var(--ink); }
- 
+
 /* ---- SECTIONS ---- */
 section{
   padding: 60px 40px;
@@ -80,7 +83,7 @@ section{
 }
 section h2{ font-size: 28px; margin-bottom: 24px; }
 section p{ color: var(--ink-dim); max-width: 65ch; }
- 
+
 /* ---- PROJECTS ---- */
 .project-list{
   display: flex;
@@ -112,7 +115,7 @@ section p{ color: var(--ink-dim); max-width: 65ch; }
   transform: translateX(0);
 }
 .project-row:hover h3{ color: var(--accent); }
- 
+
 /* ---- SKILLS ---- */
 .skills-list{
   display: flex;
@@ -131,7 +134,7 @@ section p{ color: var(--ink-dim); max-width: 65ch; }
   background: var(--accent);
   color: var(--bg);
 }
- 
+
 /* ---- CONTACT ---- */
 .contact-links{
   display: flex;
@@ -149,7 +152,7 @@ section p{ color: var(--ink-dim); max-width: 65ch; }
   background: var(--accent);
   color: var(--bg);
 }
- 
+
 /* ---- SCROLL REVEAL ---- */
 .reveal{
   opacity: 0;
@@ -160,12 +163,12 @@ section p{ color: var(--ink-dim); max-width: 65ch; }
   opacity: 1;
   transform: translateY(0);
 }
- 
+
 @media (prefers-reduced-motion: reduce){
   .reveal{ opacity: 1; transform: none; transition: none; }
   html{ scroll-behavior: auto; }
 }
- 
+
 /* ---- FOOTER ---- */
 footer{
   max-width: 900px;
@@ -182,4 +185,3 @@ footer{
 }
 .back-to-top{ color: var(--ink-dim); }
 .back-to-top:hover{ color: var(--ink); }
- 
