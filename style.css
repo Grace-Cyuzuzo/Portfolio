@@ -70,7 +70,42 @@ nav{
 .social-links{ display: flex; gap: 20px; }
 .social-links a{ font-size: 14px; color: var(--ink-dim); }
 .social-links a:hover{ color: var(--ink); }
- 
+
+/* ---- ABOUT ---- */
+.about-content {
+  display: flex;
+  gap: 32px;
+  align-items: flex-start;
+}
+
+.about-photo {
+  width: 160px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+  flex-shrink: 0;
+}
+
+.about-text {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.about-text p {
+  color: var(--ink-dim);
+}
+
+@media (max-width: 640px) {
+  .about-content {
+    flex-direction: column;
+  }
+
+  .about-photo {
+    width: 120px;
+    height: 135px;
+  }
+}
 /* ---- SECTIONS ---- */
 section{
   padding: 60px 40px;
